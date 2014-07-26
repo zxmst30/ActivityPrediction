@@ -72,6 +72,11 @@ test.pred <- predict(Fit, newdata = testing)
 test.pred
 ```
 
+### Importance of variables used in the model:
+```{r}
+varImp(Fit)
+```
+
 ## 5. Discussion
 The overall out of sample error of the prediction model is 5%, but there are some differences in the prediction accuracy between the 5 different exercise classes. Class B has the lowest balanced accuracy (94.5%), while Class A has the highest (98.9%).
 Limitations of this model: If I had had more time and hardware resources, I would have used a larger fraction of the training set (60-70%) to build the predition model which probably would have yielded even more accurate predictions.
